@@ -1,9 +1,9 @@
 // Función para calcular la propina
 function calculateTip(billAmount, tipPercentage) {
-  if (billAmount < 0 || tipPercentage < 0) {
-    throw new Error("Los valores deben ser positivos");
-  }
-  return (billAmount * tipPercentage) / 100;
+    if (billAmount < 0 || tipPercentage < 0) {
+        throw new Error("Los valores deben ser positivos");
+    }
+    return (billAmount * tipPercentage) / 100;
 }
 
 module.exports = { calculateTip }; // Exportar para pruebas si se desea
